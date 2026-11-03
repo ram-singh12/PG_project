@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 7%;
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+.admin-btn {
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+}
+
+
+.admin-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.small-heading {
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* BUTTONS */
+
+.primary-btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.secondary-btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    color: white;
+}
+
+
+.small-btn {
+    margin-top: 15px;
+    padding: 9px 15px;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 8%;
+}
+
+
+.light {
+    background: #f7f8fa;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.section-title p {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.section-title h2 {
+    font-size: 34px;
+}
+
+
+/* ABOUT */
+
+.about {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.about h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.about p {
+    margin-bottom: 15px;
+}
+
+
+.about-box {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.about-box div {
+    padding: 30px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.about-box strong {
+    display: block;
+
+    font-size: 25px;
+
+    color: #2563eb;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    text-align: center;
+}
+
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* CTA */
+
+.cta {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #eff6ff;
+}
+
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+
+    padding-top: 50px;
+}
+
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 40px;
+
+    padding: 0 8% 40px;
+}
+
+
+.footer-content a {
+    display: block;
+
+    margin: 5px 0;
+
+    color: #d1d5db;
+}
+
+
+.copyright {
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #374151;
+
+    color: #9ca3af;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: #eff6ff;
+}
+
+
+.page-header h1 {
+    font-size: 45px;
+}
+
+
+/* ROOMS */
+
+.room-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(350px, 500px));
+    
+    justify-content: center;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.room-card {
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: white;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.room-image {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+
+    background: #e5edff;
+}
+
+
+.room-content {
+    padding: 25px;
+}
+
+
+.room-content h2 {
+    margin-bottom: 8px;
+}
+
+
+.room-info {
+    display: flex;
+
+    gap: 15px;
+
+    margin: 15px 0;
+
+    font-size: 14px;
+}
+
+
+.available {
+    display: block;
+
+    color: #16a34a;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* FACILITIES */
+
+.facility-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.facility-card {
+    padding: 35px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+
+.facility-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.contact-item {
+    margin-top: 25px;
+}
+
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+.map-section {
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+}
+
+
+.map {
+    margin-top: 20px;
+}
+
+
+/* NOTICE */
+
+.notice {
+    text-align: center;
+
+    padding: 50px;
+
+    background: #f7f8fa;
+}
+
+
+/* LOGIN */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #eff6ff;
+}
+
+
+.login-box {
+    width: 400px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.login-box h1 {
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+
+.login-title {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #666;
+}
+
+
+.login-box form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.login-box input {
+    margin-bottom: 10px;
+}
+
+
+#loginMessage {
+    text-align: center;
+}
+
+
+/* ADMIN */
+
+.admin-navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+.dashboard {
+    padding: 50px 7%;
+}
+
+
+.dashboard-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+
+.dashboard-card {
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.dashboard-card span {
+    font-size: 30px;
+}
+
+
+.dashboard-card strong {
+    display: block;
+
+    font-size: 30px;
+
+    margin-top: 10px;
+}
+
+
+.admin-section {
+    margin-top: 50px;
+}
+
+
+.admin-actions {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+
+.admin-actions button {
+    padding: 14px 20px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .room-grid{
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .cards,
+    .facility-grid,
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .login-box {
+        width: 90%;
+    }
+
+}
