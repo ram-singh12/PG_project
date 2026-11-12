@@ -126,6 +126,63 @@
 
     </div>
 
+<!-- Notice Management -->
+
+<div class="admin-section">
+
+    <h2>Digital Notice Board Management</h2>
+
+    <p>Publish important announcements for hostel residents.</p>
+
+    <div class="notice-form">
+
+        <h3>Publish New Notice</h3>
+
+        <form id="noticeForm">
+
+            <label for="noticeTitle">Notice Title</label>
+            <input
+                type="text"
+                id="noticeTitle"
+                placeholder="Enter notice title"
+                required
+            >
+
+            <label for="noticeCategory">Category</label>
+            <select id="noticeCategory" required>
+                <option value="">Select Category</option>
+                <option value="General">General</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Events">Events</option>
+                <option value="Important">Important</option>
+            </select>
+
+            <label for="noticeDescription">Description</label>
+            <textarea
+                id="noticeDescription"
+                placeholder="Write your announcement..."
+                rows="4"
+                required
+            ></textarea>
+
+            <button type="submit">Publish Notice</button>
+
+        </form>
+
+    </div>
+
+    <div class="admin-notice-list">
+
+        <h3>Published Notices</h3>
+
+        <div id="adminNoticeList">
+            <!-- Notices will appear here using JavaScript -->
+        </div>
+
+    </div>
+
+</div>
+
 
 </section>
 
