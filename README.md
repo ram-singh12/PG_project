@@ -15,4 +15,4 @@ How to Run
 2. Open the project folder.
 3. Open index.html in your browser.
 Developer
-Ram Singh
+Mr. Ram Singh
